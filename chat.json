@@ -1,0 +1,351 @@
+{
+"start": {
+  "message": "「こちら本部！至急応答せよ！」",
+  "bg": "back.jpg",
+  "choices": {
+    "「…こちら警部ッ!」": "chase",
+    "「無視しよう...」": "ignore"
+  }
+},
+
+"ignore": {
+  "message": "※解除に間に合わず、街の外れで無惨な爆発音💥が鳴り響いた――。",
+  "bg": "bomb.jpg",
+  "choices": {
+    "「応答せよ!」": "start"
+  }
+},
+
+"ignore2": {
+  "message": "※解除に間に合わず、警部の手元で無惨な爆発音💥が鳴り響いた――。",
+  "bg": "bomb.jpg",
+  "choices": {
+    "「…なんだ夢かッ…!」": "start"
+  }
+},
+
+"ignore3": {
+  "message": "※解除に間に合わず、街の外れで無惨な爆発音💥が鳴り響いた――。",
+  "bg": "bomb.jpg",
+  "choices": {
+    "「妻の冗談だった…」": "start"
+  }
+},
+  
+  "chase": {
+    "message": "「市内に爆発物が仕掛けられたとの通報あり! ただちに現場へ急行せよ!」",
+    "choices": {
+      "「了解! 東に向かう!」": "east",
+      "「何ッ! 西に向かうぞ!」": "west"
+    }
+  },
+
+  "east": {
+    "message": "「そうだッ! 東へ5km進んだ橋に爆弾が仕掛けられていると通報あり!」",
+    "choices": {
+      "「遠いな…Taxi🚕を捕まえよう!」": "taxi",
+      "「遠いな…仕事をサボろう🚬!」": "ignore"
+    }
+  },
+
+  "west": {
+    "message": "「そうだッ! 西に3km進んだ美術館に今犯人が現れたと通報あり!」",
+    "choices": {
+      "「例の爆弾魔だな…急行する!💨」": "museum",
+      "「ちょっとコーヒー☕を一杯…」": "coffee"
+    }
+  },
+
+  "taxi": {
+    "message": "※🚕おじさん「どちらまでいきやすか?💨」",
+    "choices": {
+      "「レッドブリッヂまで頼む!」": "redb",
+      "「ブルーブリッヂまで頼む!」": "blueb"
+    }
+  },
+
+  "redb": {
+    "message": "※居酒屋レッドブリッヂに着いた。",
+    "choices": {
+      "「そうそう、この店は焼き鳥が旨いんだよな…」": "ignore"
+    }
+  },
+
+"blueb": {
+  "message": "「奴め…ブルーブリッヂのど真ん中に仕掛けやがったかッ！」",
+  "choices": {
+    "「これより解除する!」": "blueb_password",
+    "「運転手さん…お願いできます?」": "ignore"
+  }
+},
+
+"blueb_password": {
+  "password": {
+    "correct": "404",
+    "success": "success",
+    "fail": "fail"
+  }
+},
+
+  "museum": {
+    "message": "※美術館に着いたが、犯人の姿が見当たらない…",
+    "choices": {
+      "「子連れの親子に声をかける!」": "family",
+      "「カップルに声をかける!」": "cup"
+    }
+  },
+
+  "family": {
+    "message": "「そいつが爆弾魔だッ!」",
+    "choices": {
+      "「父親を拘束する!」": "father",
+      "「母親を拘束する!」": "mother"
+    }
+  },
+
+  "father": {
+    "message": "※父親👨「私は無実だ!」",
+    "choices": {
+      "「無実の罪で逮捕する!」": "ignore"
+    }
+  },
+
+  "mother": {
+    "message": "※爆弾魔🦹「バレちまったらしょうがねえッ! くらえッ!」",
+    "choices": {
+      "「赤ちゃん型フラッシュ爆弾⚡️だ!」": "flash"
+    }
+  },
+
+  "flash": {
+    "message": "※光に乗じて、爆弾魔🦹は逃走した!",
+    "choices": {
+      "「待てッ!」": "maze"
+    }
+},
+
+"maze": {
+  "link": "maze.html"
+},
+
+  "cup": {
+    "message": "※よく見たら、妻の佳子👩‍🦰だ!",
+    "choices": {
+      "「お前! 不倫中じゃないか!」": "yoshiko"
+    }
+  },
+
+  "yoshiko": {
+    "message": "※佳子👩‍🦰「爆弾魔は私よッ!」",
+    "choices": {
+      "「衝撃の展開ッ!」": "ignore3"
+    }
+  },
+
+  "coffee": {
+    "message": "※カフェで怪しいサングラス🕶️の男を発見した!",
+    "choices": {
+      "「そいつを捕まえるッ!」": "xcatch",
+      "「ブルーマウンテンを一杯☕」": "colom"
+    }
+  },
+
+  "xcatch": {
+    "message": "※サングラスの男は逃げ出した!",
+    "choices": {
+      "「俺は足が遅いんだ!💨」": "oso",
+      "「俺は足が速いんだ!💨」": "haya"
+    }
+  },
+
+  "oso": {
+    "message": "※…あまりの遅さに怪しい人物を取り逃がした…",
+    "choices": {
+      "「しまった…」": "ignore"
+    }
+  },
+
+  "haya": {
+    "message": "※…あまりの速さに怪しい人物を置き去りにした!",
+    "choices": {
+      "「しまった…」": "ignore"
+    }
+  },
+
+  "colom": {
+    "message": "※店員👨‍🎨「入れ方は?」",
+    "choices": {
+      "「弱火でじっくり」": "hot",
+      "「キンキンに冷やして」": "ice"
+    }
+  },
+
+  "hot": {
+    "message": "※🕶️「貴様『HUNTER×HUNTER』の読者だな?」",
+    "choices": {
+      "「ステーキ定食…」": "steak",
+      "「レバニラ炒め…」": "reba"
+    }
+  },
+
+  "steak": {
+    "message": "※🕶️「解除コードは4次試験クラピカのナンバープレート」",
+    "choices": {
+      "「44」": "reba",
+      "「404」": "404"
+    }
+  },
+
+  "404": {
+    "message": "※🕶️「そうだ…急ぐといい…」",
+    "choices": {
+      "「橋に向かうぞ!」": "taxi"
+    }
+  },
+
+  "reba": {
+    "message": "※🕶️「なんだ…ニワカか…」",
+    "choices": {
+      "「しまった!」": "ignore"
+    }
+  },
+
+  "ice": {
+    "message": "※🕶️黒服「貴様『賭博破戒録カイジ』の読者だな?」",
+    "choices": {
+      "「まさか…地下強制労働!?」": "ignore"
+    }
+  },
+
+  "vault": {
+    "message": "※この扉は固く鎖されている…解除コードが必要だ！",
+    "password": {
+      "correct": "404",
+      "success": "success",
+      "fail": "fail"
+    }
+  },
+
+  "success": {
+    "message": "「解除コード確認完了！アクセス権を取得した！」",
+    "choices": {
+      "「爆弾のケースが開いたッ!!」": "code_start"
+    }
+  },
+
+  "final-scene": {
+    "message": "🚨ついに犯人のアジトへ突入…物語はクライマックスへ！",
+    "choices": {
+      "「応答せよ!」": "start"
+    }
+  },
+
+  "subway": {
+    "message": "犯人を地下鉄構内で確保成功！🚨 しかし…市内の図書館で爆発が発生。死傷者あり…。",
+    "choices": {
+      "「応答せよ!」": "start"
+    }
+  },
+
+  "car": {
+    "message": "車で追いかけるが、犯人は逃走。さらに直後に爆発が発生！最悪の結果となった…。",
+    "choices": {
+      "「応答せよ!」": "start"
+    }
+  },
+
+  "bomb": {
+    "message": "爆発物は市内図書館に設置されていた！まだ処理班は到着していない！",
+    "choices": {
+      "自分で処理にあたる": "defuse",
+      "周囲の市民を避難誘導する": "evacuate"
+    }
+  },
+
+  "defuse": {
+    "message": "勇気ある決断で爆発を阻止！市民の命を救った！だが犯人には逃げられてしまった…。",
+    "choices": {
+      "「応答せよ!」": "start"
+    }
+  },
+
+  "evacuate": {
+    "message": "冷静な判断で被害ゼロ！避難誘導中、犯人が残した手がかりを発見！次回こそ…！",
+    "choices": {
+      "「応答せよ!」": "start"
+    }
+  },
+
+  "code_start": {
+  "message": "※――赤と青どっちを切るッ!",
+  "choices": {
+    "赤": "fail",
+    "青": "code_1_blue"
+  }
+},
+
+"code_1_blue": {
+  "message": "※――2本目はどっちを切るッ!",
+  "choices": {
+    "赤": "code_2_red1",
+    "青": "fail"
+  }
+},
+
+"code_2_red1": {
+  "message": "※――3本目はどっちを切るッ!",
+  "choices": {
+    "赤": "code_3_red2",
+    "青": "fail"
+  }
+},
+
+"code_3_red2": {
+  "message": "※――4本目はどっちを切るッ!",
+  "choices": {
+    "赤": "fail",
+    "青": "code_4_blue"
+  }
+},
+
+"code_4_blue": {
+  "message": "※――最終コードを切断せよ！",
+  "choices": {
+    "赤": "code_success",
+    "青": "fail"
+  }
+},
+
+"code_success": {
+  "message": "解除成功！無事爆発は防がれた!!",
+  "choices": {
+    "「これより帰還する!」": "ending"
+  }
+},
+
+"ending": {
+  "message": "※警部は無事に任務を果たし、街に平和が訪れた",
+  "bg": "back.jpg",
+  "choices": {
+    "任務完了――。": "clear"
+  }
+  },
+
+  "clear": {
+  "message": "※任務完了――。",
+  "choices": {}
+},
+
+"fail": {
+  "message": "※コードミス！手元で爆弾が爆発した…💥",
+  "bg": "bomb.jpg",
+  "choices": {
+    "「…どこかに情報があるはずだッ…!」": "start"
+  }
+}
+
+}
+
+
+
+

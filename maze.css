@@ -1,0 +1,90 @@
+body {
+  font-family: sans-serif;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;;
+  background-color: black;
+  background-image: url("maze.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+  transition: opacity 1s ease;
+}
+
+table { 
+  border-collapse: collapse; 
+  margin: auto; 
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+td { 
+  width: 40px; 
+  height: 40px; 
+  text-align: center; 
+  font-size: 24px; 
+}
+
+body h1, body p {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  font-weight: bold;
+}
+
+#hp {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 8px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  border-radius: 5px;
+}
+
+.wall { 
+  background-color: black; 
+}
+
+.path { 
+  background-color: white; 
+}
+
+.player { 
+  background-color: lightblue; 
+}
+
+.goal { 
+  background-color: gold; 
+}
+
+.passed { 
+  background-color:  lightblue; 
+  color: lightblue; }
+
+.wall {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+body.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
